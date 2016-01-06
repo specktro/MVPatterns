@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50B428C21C385D9400939043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C11C385D9400939043 /* AppDelegate.swift */; };
+		50B428C41C385D9400939043 /* MVCAppleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C31C385D9400939043 /* MVCAppleController.swift */; };
+		50B428C91C385D9400939043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B428C81C385D9400939043 /* Assets.xcassets */; };
+		50B428CC1C385D9400939043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B428CA1C385D9400939043 /* LaunchScreen.storyboard */; };
+		50B428D71C385D9400939043 /* ArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428D61C385D9400939043 /* ArchTests.swift */; };
+		50B428E21C385D9400939043 /* ArchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428E11C385D9400939043 /* ArchUITests.swift */; };
+		50B428F01C3860AE00939043 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428EF1C3860AE00939043 /* Person.swift */; };
+		50B428F21C38660800939043 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428F11C38660800939043 /* MVPViewController.swift */; };
+		50C690D21C38F36900806296 /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C690D11C38F36900806296 /* GreetingPresenter.swift */; };
+		50C690D81C39001100806296 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C690D71C39001100806296 /* GreetingViewModel.swift */; };
+		50C690DA1C3901B700806296 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C690D91C3901B700806296 /* MVVMViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50B428D31C385D9400939043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50B428B61C385D9400939043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B428BD1C385D9400939043;
+			remoteInfo = Arch;
+		};
+		50B428DE1C385D9400939043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50B428B61C385D9400939043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B428BD1C385D9400939043;
+			remoteInfo = Arch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50B428BE1C385D9400939043 /* Arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B428C11C385D9400939043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50B428C31C385D9400939043 /* MVCAppleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCAppleController.swift; sourceTree = "<group>"; };
+		50B428C81C385D9400939043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50B428CB1C385D9400939043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50B428CD1C385D9400939043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B428D21C385D9400939043 /* ArchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B428D61C385D9400939043 /* ArchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchTests.swift; sourceTree = "<group>"; };
+		50B428D81C385D9400939043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B428DD1C385D9400939043 /* ArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B428E11C385D9400939043 /* ArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchUITests.swift; sourceTree = "<group>"; };
+		50B428E31C385D9400939043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B428EF1C3860AE00939043 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		50B428F11C38660800939043 /* MVPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		50C690D11C38F36900806296 /* GreetingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		50C690D71C39001100806296 /* GreetingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
+		50C690D91C3901B700806296 /* MVVMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50B428BB1C385D9400939043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B428CF1C385D9400939043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B428DA1C385D9400939043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50B428B51C385D9400939043 = {
+			isa = PBXGroup;
+			children = (
+				50B428C01C385D9400939043 /* Arch */,
+				50B428D51C385D9400939043 /* ArchTests */,
+				50B428E01C385D9400939043 /* ArchUITests */,
+				50B428BF1C385D9400939043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50B428BF1C385D9400939043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50B428BE1C385D9400939043 /* Arch.app */,
+				50B428D21C385D9400939043 /* ArchTests.xctest */,
+				50B428DD1C385D9400939043 /* ArchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50B428C01C385D9400939043 /* Arch */ = {
+			isa = PBXGroup;
+			children = (
+				50B428C11C385D9400939043 /* AppDelegate.swift */,
+				50C690D51C38F54500806296 /* Model */,
+				50C690D41C38F53B00806296 /* MVC */,
+				50C690D31C38F52100806296 /* MVP */,
+				50C690D61C38F85700806296 /* MVVM */,
+				50B428C81C385D9400939043 /* Assets.xcassets */,
+				50B428CA1C385D9400939043 /* LaunchScreen.storyboard */,
+				50B428CD1C385D9400939043 /* Info.plist */,
+			);
+			path = Arch;
+			sourceTree = "<group>";
+		};
+		50B428D51C385D9400939043 /* ArchTests */ = {
+			isa = PBXGroup;
+			children = (
+				50B428D61C385D9400939043 /* ArchTests.swift */,
+				50B428D81C385D9400939043 /* Info.plist */,
+			);
+			path = ArchTests;
+			sourceTree = "<group>";
+		};
+		50B428E01C385D9400939043 /* ArchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50B428E11C385D9400939043 /* ArchUITests.swift */,
+				50B428E31C385D9400939043 /* Info.plist */,
+			);
+			path = ArchUITests;
+			sourceTree = "<group>";
+		};
+		50C690D31C38F52100806296 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				50C690D11C38F36900806296 /* GreetingPresenter.swift */,
+				50B428F11C38660800939043 /* MVPViewController.swift */,
+			);
+			name = MVP;
+			sourceTree = "<group>";
+		};
+		50C690D41C38F53B00806296 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				50B428C31C385D9400939043 /* MVCAppleController.swift */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		50C690D51C38F54500806296 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50B428EF1C3860AE00939043 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		50C690D61C38F85700806296 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				50C690D71C39001100806296 /* GreetingViewModel.swift */,
+				50C690D91C3901B700806296 /* MVVMViewController.swift */,
+			);
+			name = MVVM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50B428BD1C385D9400939043 /* Arch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B428E61C385D9400939043 /* Build configuration list for PBXNativeTarget "Arch" */;
+			buildPhases = (
+				50B428BA1C385D9400939043 /* Sources */,
+				50B428BB1C385D9400939043 /* Frameworks */,
+				50B428BC1C385D9400939043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Arch;
+			productName = Arch;
+			productReference = 50B428BE1C385D9400939043 /* Arch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50B428D11C385D9400939043 /* ArchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B428E91C385D9400939043 /* Build configuration list for PBXNativeTarget "ArchTests" */;
+			buildPhases = (
+				50B428CE1C385D9400939043 /* Sources */,
+				50B428CF1C385D9400939043 /* Frameworks */,
+				50B428D01C385D9400939043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B428D41C385D9400939043 /* PBXTargetDependency */,
+			);
+			name = ArchTests;
+			productName = ArchTests;
+			productReference = 50B428D21C385D9400939043 /* ArchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50B428DC1C385D9400939043 /* ArchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B428EC1C385D9400939043 /* Build configuration list for PBXNativeTarget "ArchUITests" */;
+			buildPhases = (
+				50B428D91C385D9400939043 /* Sources */,
+				50B428DA1C385D9400939043 /* Frameworks */,
+				50B428DB1C385D9400939043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B428DF1C385D9400939043 /* PBXTargetDependency */,
+			);
+			name = ArchUITests;
+			productName = ArchUITests;
+			productReference = 50B428DD1C385D9400939043 /* ArchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50B428B61C385D9400939043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = specktro;
+				TargetAttributes = {
+					50B428BD1C385D9400939043 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					50B428D11C385D9400939043 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 50B428BD1C385D9400939043;
+					};
+					50B428DC1C385D9400939043 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 50B428BD1C385D9400939043;
+					};
+				};
+			};
+			buildConfigurationList = 50B428B91C385D9400939043 /* Build configuration list for PBXProject "Arch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50B428B51C385D9400939043;
+			productRefGroup = 50B428BF1C385D9400939043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50B428BD1C385D9400939043 /* Arch */,
+				50B428D11C385D9400939043 /* ArchTests */,
+				50B428DC1C385D9400939043 /* ArchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50B428BC1C385D9400939043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B428CC1C385D9400939043 /* LaunchScreen.storyboard in Resources */,
+				50B428C91C385D9400939043 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B428D01C385D9400939043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B428DB1C385D9400939043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50B428BA1C385D9400939043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B428F21C38660800939043 /* MVPViewController.swift in Sources */,
+				50C690D81C39001100806296 /* GreetingViewModel.swift in Sources */,
+				50C690DA1C3901B700806296 /* MVVMViewController.swift in Sources */,
+				50C690D21C38F36900806296 /* GreetingPresenter.swift in Sources */,
+				50B428F01C3860AE00939043 /* Person.swift in Sources */,
+				50B428C41C385D9400939043 /* MVCAppleController.swift in Sources */,
+				50B428C21C385D9400939043 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B428CE1C385D9400939043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B428D71C385D9400939043 /* ArchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B428D91C385D9400939043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B428E21C385D9400939043 /* ArchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50B428D41C385D9400939043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50B428BD1C385D9400939043 /* Arch */;
+			targetProxy = 50B428D31C385D9400939043 /* PBXContainerItemProxy */;
+		};
+		50B428DF1C385D9400939043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50B428BD1C385D9400939043 /* Arch */;
+			targetProxy = 50B428DE1C385D9400939043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50B428CA1C385D9400939043 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B428CB1C385D9400939043 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50B428E41C385D9400939043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50B428E51C385D9400939043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50B428E71C385D9400939043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Arch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.Arch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50B428E81C385D9400939043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Arch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.Arch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50B428EA1C385D9400939043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.ArchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arch.app/Arch";
+			};
+			name = Debug;
+		};
+		50B428EB1C385D9400939043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.ArchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arch.app/Arch";
+			};
+			name = Release;
+		};
+		50B428ED1C385D9400939043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.ArchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Arch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		50B428EE1C385D9400939043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.ArchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Arch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50B428B91C385D9400939043 /* Build configuration list for PBXProject "Arch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B428E41C385D9400939043 /* Debug */,
+				50B428E51C385D9400939043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B428E61C385D9400939043 /* Build configuration list for PBXNativeTarget "Arch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B428E71C385D9400939043 /* Debug */,
+				50B428E81C385D9400939043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B428E91C385D9400939043 /* Build configuration list for PBXNativeTarget "ArchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B428EA1C385D9400939043 /* Debug */,
+				50B428EB1C385D9400939043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B428EC1C385D9400939043 /* Build configuration list for PBXNativeTarget "ArchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B428ED1C385D9400939043 /* Debug */,
+				50B428EE1C385D9400939043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50B428B61C385D9400939043 /* Project object */;
+}
