@@ -26,6 +26,6 @@ class GreetingPresenter: GreetingViewPresenter {
     
     func showGreeting() {
         let greeting = "Hello " + person.firstName + " " + person.lastName
-        view.setGreeting(greeting)
+        view.setGreeting(greeting: greeting)
     }
 }

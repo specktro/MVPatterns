@@ -9,60 +9,55 @@
 import UIKit
 
 class MVPViewController: UIViewController, GreetingView {
-    var presenter: GreetingPresenter!
-    let showGreetingButton = UIButton()
-    let greetingLabel = UILabel()
+  var presenter: GreetingPresenter!
+  let showGreetingButton = UIButton()
+  let greetingLabel = UILabel()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.grayColor()
-        
-        showGreetingButton.translatesAutoresizingMaskIntoConstraints = false
-        showGreetingButton.setTitle("TAP", forState: .Normal)
-        showGreetingButton.addTarget(self, action: "didTapButton:", forControlEvents: .TouchUpInside)
-        view.addSubview(showGreetingButton)
-        
-        greetingLabel.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(greetingLabel)
-        
-        var constraints = [NSLayoutConstraint(item: showGreetingButton,
-            attribute: .CenterX,
-            relatedBy: .Equal,
-            toItem: view,
-            attribute: .CenterX,
-            multiplier: 1.0,
-            constant: 0.0)]
-        constraints.append(NSLayoutConstraint(item: showGreetingButton,
-            attribute: .CenterY,
-            relatedBy: .Equal,
-            toItem: view,
-            attribute: .CenterY,
-            multiplier: 1.0,
-            constant: 0.0))
-        constraints.append(NSLayoutConstraint(item: greetingLabel,
-            attribute: .CenterX,
-            relatedBy: .Equal,
-            toItem: showGreetingButton,
-            attribute: .CenterX,
-            multiplier: 1.0,
-            constant: 0.0))
-        constraints.appendContentsOf(NSLayoutConstraint.constraintsWithVisualFormat("V:[button]-[label]",
-            options: [],
-            metrics: nil,
-            views: ["button": showGreetingButton, "label": greetingLabel]))
-        
-        for con in constraints {
-            con.active = true
-        }
-    }
+    view.backgroundColor = UIColor.gray
     
-    func didTapButton(button: UIButton) {
-        presenter.showGreeting()
-    }
+    showGreetingButton.translatesAutoresizingMaskIntoConstraints = false
+    showGreetingButton.setTitle("TAP", for: .normal)
+    showGreetingButton.addTarget(self, action: #selector(didTapButton(button:)), for: .touchUpInside)
+    view.addSubview(showGreetingButton)
     
-    // MARK: - GreetingView Protocol
-    func setGreeting(greeting: String) {
-        greetingLabel.text = greeting
-    }
+    greetingLabel.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(greetingLabel)
+    
+    var constraints = [NSLayoutConstraint(item: showGreetingButton,
+                                          attribute: .centerX,
+                                          relatedBy: .equal,
+                                          toItem: view,
+                                          attribute: .centerX,
+                                          multiplier: 1.0,
+                                          constant: 0.0)]
+    constraints.append(NSLayoutConstraint(item: showGreetingButton,
+                                          attribute: .centerY,
+                                          relatedBy: .equal,
+                                          toItem: view,
+                                          attribute: .centerY,
+                                          multiplier: 1.0,
+                                          constant: 0.0))
+    constraints.append(NSLayoutConstraint(item: greetingLabel,
+                                          attribute: .centerX,
+                                          relatedBy: .equal,
+                                          toItem: showGreetingButton,
+                                          attribute: .centerX,
+                                          multiplier: 1.0,
+                                          constant: 0.0))
+    constraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[button]-[label]", options: [], metrics: nil, views: ["button": showGreetingButton, "label": greetingLabel]))
+    
+    NSLayoutConstraint.activate(constraints)
+  }
+  
+  @objc func didTapButton(button: UIButton) {
+    presenter.showGreeting()
+  }
+  
+  // MARK: - GreetingView Protocol
+  func setGreeting(greeting: String) {
+    greetingLabel.text = greeting
+  }
 }
