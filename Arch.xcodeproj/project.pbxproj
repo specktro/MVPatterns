@@ -12,7 +12,6 @@
 		50B428C91C385D9400939043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B428C81C385D9400939043 /* Assets.xcassets */; };
 		50B428CC1C385D9400939043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B428CA1C385D9400939043 /* LaunchScreen.storyboard */; };
 		50B428D71C385D9400939043 /* ArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428D61C385D9400939043 /* ArchTests.swift */; };
-		50B428E21C385D9400939043 /* ArchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428E11C385D9400939043 /* ArchUITests.swift */; };
 		50B428F01C3860AE00939043 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428EF1C3860AE00939043 /* Person.swift */; };
 		50B428F21C38660800939043 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428F11C38660800939043 /* MVPViewController.swift */; };
 		50C690D21C38F36900806296 /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C690D11C38F36900806296 /* GreetingPresenter.swift */; };
@@ -22,13 +21,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		50B428D31C385D9400939043 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50B428B61C385D9400939043 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50B428BD1C385D9400939043;
-			remoteInfo = Arch;
-		};
-		50B428DE1C385D9400939043 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50B428B61C385D9400939043 /* Project object */;
 			proxyType = 1;
@@ -47,9 +39,6 @@
 		50B428D21C385D9400939043 /* ArchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B428D61C385D9400939043 /* ArchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchTests.swift; sourceTree = "<group>"; };
 		50B428D81C385D9400939043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50B428DD1C385D9400939043 /* ArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50B428E11C385D9400939043 /* ArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchUITests.swift; sourceTree = "<group>"; };
-		50B428E31C385D9400939043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B428EF1C3860AE00939043 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		50B428F11C38660800939043 /* MVPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
 		50C690D11C38F36900806296 /* GreetingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
@@ -72,13 +61,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50B428DA1C385D9400939043 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +69,6 @@
 			children = (
 				50B428C01C385D9400939043 /* Arch */,
 				50B428D51C385D9400939043 /* ArchTests */,
-				50B428E01C385D9400939043 /* ArchUITests */,
 				50B428BF1C385D9400939043 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +78,6 @@
 			children = (
 				50B428BE1C385D9400939043 /* Arch.app */,
 				50B428D21C385D9400939043 /* ArchTests.xctest */,
-				50B428DD1C385D9400939043 /* ArchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,15 +104,6 @@
 				50B428D81C385D9400939043 /* Info.plist */,
 			);
 			path = ArchTests;
-			sourceTree = "<group>";
-		};
-		50B428E01C385D9400939043 /* ArchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				50B428E11C385D9400939043 /* ArchUITests.swift */,
-				50B428E31C385D9400939043 /* Info.plist */,
-			);
-			path = ArchUITests;
 			sourceTree = "<group>";
 		};
 		50C690D31C38F52100806296 /* MVP */ = {
@@ -207,24 +178,6 @@
 			productReference = 50B428D21C385D9400939043 /* ArchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		50B428DC1C385D9400939043 /* ArchUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50B428EC1C385D9400939043 /* Build configuration list for PBXNativeTarget "ArchUITests" */;
-			buildPhases = (
-				50B428D91C385D9400939043 /* Sources */,
-				50B428DA1C385D9400939043 /* Frameworks */,
-				50B428DB1C385D9400939043 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50B428DF1C385D9400939043 /* PBXTargetDependency */,
-			);
-			name = ArchUITests;
-			productName = ArchUITests;
-			productReference = 50B428DD1C385D9400939043 /* ArchUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,10 +192,6 @@
 						CreatedOnToolsVersion = 7.2;
 					};
 					50B428D11C385D9400939043 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 50B428BD1C385D9400939043;
-					};
-					50B428DC1C385D9400939043 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 50B428BD1C385D9400939043;
 					};
@@ -264,7 +213,6 @@
 			targets = (
 				50B428BD1C385D9400939043 /* Arch */,
 				50B428D11C385D9400939043 /* ArchTests */,
-				50B428DC1C385D9400939043 /* ArchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,13 +228,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		50B428D01C385D9400939043 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50B428DB1C385D9400939043 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,14 +259,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50B428D91C385D9400939043 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50B428E21C385D9400939043 /* ArchUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -333,11 +266,6 @@
 			isa = PBXTargetDependency;
 			target = 50B428BD1C385D9400939043 /* Arch */;
 			targetProxy = 50B428D31C385D9400939043 /* PBXContainerItemProxy */;
-		};
-		50B428DF1C385D9400939043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50B428BD1C385D9400939043 /* Arch */;
-			targetProxy = 50B428DE1C385D9400939043 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -394,6 +322,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -431,6 +360,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -470,6 +400,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.ArchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arch.app/Arch";
 			};
 			name = Debug;
@@ -482,31 +413,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.ArchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arch.app/Arch";
-			};
-			name = Release;
-		};
-		50B428ED1C385D9400939043 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ArchUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.ArchUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Arch;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		50B428EE1C385D9400939043 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ArchUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.specktro.ArchUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Arch;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -536,15 +444,6 @@
 			buildConfigurations = (
 				50B428EA1C385D9400939043 /* Debug */,
 				50B428EB1C385D9400939043 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		50B428EC1C385D9400939043 /* Build configuration list for PBXNativeTarget "ArchUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50B428ED1C385D9400939043 /* Debug */,
-				50B428EE1C385D9400939043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
