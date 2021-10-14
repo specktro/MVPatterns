@@ -20,15 +20,15 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     window = UIWindow(frame: UIScreen.main.bounds)
     
     // MARK: - MVC Architecture
-    let model = Person(firstName: "Miguel", lastName: "Gómez")
-    let view = MVCAppleController()
-    view.person = model
+//    let model = Person(firstName: "Miguel", lastName: "Gómez")
+//    let view = MVCAppleController()
+//    view.person = model
     
     // MARK: - MVP Architecture
-//    let model = Person(firstName: "Miguel", lastName: "Gómez")
-//    let view = MVPViewController()
-//    let presenter = GreetingPresenter(view: view, person: model)
-//    view.presenter = presenter
+    let model = Person(firstName: "Sprieto", lastName: "Moreno")
+    let view = MVPViewController()
+    let presenter = GreetingPresenter(view: view, person: model)
+    view.presenter = presenter
     
     // MARK: - MVVM Architecture
 //    let model = Person(firstName: "Sprieto", lastName: "Moreno")
