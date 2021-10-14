@@ -38,7 +38,8 @@ final class MVCAppleController: UIViewController {
     label.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 8.0).isActive = true
   }
   
-  @objc func didTapButton(_ button: UIButton) {
+  // MARK: - Private methods
+  @objc private func didTapButton(_ button: UIButton) {
     guard let person = person else {
       return
     }

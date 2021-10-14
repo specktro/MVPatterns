@@ -19,22 +19,21 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
     
+    let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
+    
     // MARK: - MVC Architecture
-//    let model = Person(firstName: "Miguel", lastName: "Gómez")
 //    let view = MVCAppleController()
 //    view.person = model
     
     // MARK: - MVP Architecture
-    let model = Person(firstName: "Sprieto", lastName: "Moreno")
-    let view = MVPViewController()
-    let presenter = GreetingPresenter(view: view, person: model)
-    view.presenter = presenter
+//    let view: MVPViewController = MVPViewController()
+//    let presenter: GreetingPresenter = GreetingPresenter(view: view, person: model)
+//    view.presenter = presenter
     
     // MARK: - MVVM Architecture
-//    let model = Person(firstName: "Sprieto", lastName: "Moreno")
-//    let viewModel = GreetingViewModel(person: model)
-//    let view = MVVMViewController()
-//    view.viewModel = viewModel
+    let viewModel: GreetingViewModel = GreetingViewModel(person: model)
+    let view: MVVMViewController = MVVMViewController()
+    view.viewModel = viewModel
     
     window?.rootViewController = view
     window?.makeKeyAndVisible()

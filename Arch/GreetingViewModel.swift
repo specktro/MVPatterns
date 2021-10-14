@@ -8,27 +8,31 @@
 
 import Foundation
 
+// MARK: GreetingViewModelProtocol protocol
 protocol GreetingViewModelProtocol {
   var greeting: String? { get }
-  var greetingDidChange: ((GreetingViewModelProtocol) -> ())? { get set } // function to call when greeting did change
+  var greetingDidChange: ((GreetingViewModelProtocol) -> ())? { get set }
   init(person: Person)
   func showGreeting()
 }
 
-class GreetingViewModel: GreetingViewModelProtocol {
+// MARK: GreetingViewModel class
+final class GreetingViewModel: GreetingViewModelProtocol {
+  // MARK: - Properties
   var person: Person
+  var greetingDidChange: ((GreetingViewModelProtocol) -> ())?
   var greeting: String? {
     didSet {
       self.greetingDidChange?(self)
     }
   }
-  var greetingDidChange: ((GreetingViewModelProtocol) -> ())?
   
+  // MARK: - GreetingViewModelProtocol methods
   required init(person: Person) {
     self.person = person
   }
   
-  @objc func showGreeting() {
-    greeting = "Hello" + " " + person.firstName + " " + person.lastName
+  func showGreeting() {
+    self.greeting = "Hello" + " " + person.firstName + " " + person.lastName
   }
 }
