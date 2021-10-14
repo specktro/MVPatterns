@@ -6,7 +6,9 @@
 //  Copyright © 2016 specktro. All rights reserved.
 //
 
+// MARK: Person struct
 struct Person {
-    let firstName: String
-    let lastName: String
+  // MARK: - Properties
+  let firstName: String
+  let lastName: String
 }

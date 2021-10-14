@@ -9,12 +9,16 @@
 import UIKit
 
 @main
+
+// MARK: AppDelegate class
 final class AppDelegate: UIResponder, UIApplicationDelegate {
+  // MARK: - Properties
   var window: UIWindow?
   
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-    // Override point for customization after application launch.
+  // MARK: - UIApplicationDelegate methods
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
+    
     // MARK: - MVC Architecture
     let model = Person(firstName: "Miguel", lastName: "Gómez")
     let view = MVCAppleController()

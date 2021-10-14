@@ -6,7 +6,7 @@
 //  Copyright © 2016 specktro. All rights reserved.
 //
 
-protocol GreetingView: class {
+protocol GreetingView: AnyObject {
     func setGreeting(greeting: String)
 }
 
