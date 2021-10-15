@@ -6,26 +6,31 @@
 //  Copyright © 2016 specktro. All rights reserved.
 //
 
-protocol GreetingView: class {
-    func setGreeting(greeting: String)
+// MARK: GreetingView protocol
+protocol GreetingView: AnyObject {
+  func setGreeting(_ greeting: String)
 }
 
+// MARK: GreetingViewPresenter protocol
 protocol GreetingViewPresenter {
-    init(view: GreetingView, person: Person)
-    func showGreeting()
+  init(view: GreetingView, person: Person)
+  func showGreeting()
 }
 
-class GreetingPresenter: GreetingViewPresenter {
-    unowned let view: GreetingView
-    let person: Person
-    
-    required init(view: GreetingView, person: Person) {
-        self.view = view
-        self.person = person
-    }
-    
-    func showGreeting() {
-        let greeting = "Hello " + person.firstName + " " + person.lastName
-        view.setGreeting(greeting)
-    }
+// MARK: GreetingPresenter class
+final class GreetingPresenter: GreetingViewPresenter {
+  // MARK: - Properties
+  weak var view: GreetingView?
+  let person: Person
+  
+  // MARK: - GreetingViewPresenter protocol methods
+  required init(view: GreetingView, person: Person) {
+    self.view = view
+    self.person = person
+  }
+  
+  func showGreeting() {
+    let greeting: String = "Hello " + person.firstName + " " + person.lastName
+    view?.setGreeting(greeting)
+  }
 }

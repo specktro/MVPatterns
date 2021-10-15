@@ -8,59 +8,44 @@
 
 import UIKit
 
-class MVVMViewController: UIViewController {
-    let showGreetingButton = UIButton()
-    let greetingLabel = UILabel()
-    
-    var viewModel: GreetingViewModelProtocol! {
-        didSet {
-            self.viewModel.greetingDidChange = { [unowned self] vm in
-                self.greetingLabel.text = vm.greeting
-            }
-        }
+// MARK: MVVMViewController class
+final class MVVMViewController: UIViewController {
+  // MARK: - Properties
+  weak var greetingLabel: UILabel?
+  var viewModel: GreetingViewModelProtocol? {
+    didSet {
+      self.viewModel?.greetingDidChange = { [weak self] vm in
+        self?.greetingLabel?.text = vm.greeting
+      }
     }
+  }
+  
+  // MARK: - Lifecycle methods
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.grayColor()
-        
-        showGreetingButton.translatesAutoresizingMaskIntoConstraints = false
-        showGreetingButton.setTitle("TAP", forState: .Normal)
-        showGreetingButton.addTarget(viewModel, action: "showGreeting", forControlEvents: .TouchUpInside)
-        view.addSubview(showGreetingButton)
-        
-        greetingLabel.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(greetingLabel)
-        
-        var constraints = [NSLayoutConstraint(item: showGreetingButton,
-            attribute: .CenterX,
-            relatedBy: .Equal,
-            toItem: view,
-            attribute: .CenterX,
-            multiplier: 1.0,
-            constant: 0.0)]
-        constraints.append(NSLayoutConstraint(item: showGreetingButton,
-            attribute: .CenterY,
-            relatedBy: .Equal,
-            toItem: view,
-            attribute: .CenterY,
-            multiplier: 1.0,
-            constant: 0.0))
-        constraints.append(NSLayoutConstraint(item: greetingLabel,
-            attribute: .CenterX,
-            relatedBy: .Equal,
-            toItem: showGreetingButton,
-            attribute: .CenterX,
-            multiplier: 1.0,
-            constant: 0.0))
-        constraints.appendContentsOf(NSLayoutConstraint.constraintsWithVisualFormat("V:[button]-[label]",
-            options: [],
-            metrics: nil,
-            views: ["button": showGreetingButton, "label": greetingLabel]))
-        
-        for con in constraints {
-            con.active = true
-        }
-    }
+    view.backgroundColor = UIColor.gray
+    
+    let button: UIButton = UIButton(type: .system)
+    button.translatesAutoresizingMaskIntoConstraints = false
+    button.setTitle("TAP", for: .normal)
+    button.setTitleColor(.white, for: .normal)
+    button.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
+    view.addSubview(button)
+    
+    let label: UILabel = UILabel(frame: .zero)
+    label.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(label)
+    self.greetingLabel = label
+    
+    button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+    button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+    label.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+    label.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 8.0).isActive = true
+  }
+  
+  // MARK: - Private methods
+  @objc private func didTapButton(_ button: UIButton) {
+    viewModel?.showGreeting()
+  }
 }
