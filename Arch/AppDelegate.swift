@@ -22,8 +22,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
     
     // MARK: - MVC Architecture
-//    let view = MVCAppleController()
-//    view.person = model
+    let view: MVCViewController = MVCViewController()
+    view.person = model
     
     // MARK: - MVP Architecture
 //    let view: MVPViewController = MVPViewController()
@@ -31,9 +31,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 //    view.presenter = presenter
     
     // MARK: - MVVM Architecture
-    let viewModel: GreetingViewModel = GreetingViewModel(person: model)
-    let view: MVVMViewController = MVVMViewController()
-    view.viewModel = viewModel
+//    let viewModel: GreetingViewModel = GreetingViewModel(person: model)
+//    let view: MVVMViewController = MVVMViewController()
+//    view.viewModel = viewModel
     
     window?.rootViewController = view
     window?.makeKeyAndVisible()

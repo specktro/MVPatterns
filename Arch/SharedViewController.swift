@@ -1,17 +1,16 @@
 //
-//  ViewController.swift
+//  SharedViewController.swift
 //  Arch
 //
-//  Created by specktro on 1/2/16.
-//  Copyright © 2016 specktro. All rights reserved.
+//  Created by Miguel Angel Gómez Rivero on 16/10/21.
+//  Copyright © 2021 specktro. All rights reserved.
 //
 
 import UIKit
 
-// MARK: MVCAppleController class
-final class MVCAppleController: UIViewController {
+// MARK: SharedViewController class
+class SharedViewController: UIViewController {
   // MARK: - Properties
-  var person: Person?
   weak var greetingLabel: UILabel?
   
   // MARK: - Lifecycle methods
@@ -38,13 +37,8 @@ final class MVCAppleController: UIViewController {
     label.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 8.0).isActive = true
   }
   
-  // MARK: - Private methods
-  @objc private func didTapButton(_ button: UIButton) {
-    guard let person = person else {
-      return
-    }
-
-    let greeting: String = "Hello" + " " + person.firstName + " " + person.lastName
-    greetingLabel?.text = greeting
+  // MARK: - Abstract method
+  @objc func didTapButton(_ button: UIButton) {
+    preconditionFailure("You must override this method")
   }
 }
