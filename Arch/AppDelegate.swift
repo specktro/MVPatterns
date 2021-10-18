@@ -22,8 +22,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
     
     // MARK: - MVC Architecture
-    let view: MVCViewController = MVCViewController()
-    view.person = model
+//    let view: MVCViewController = MVCViewController()
+//    view.person = model
     
     // MARK: - MVP Architecture
 //    let view: MVPViewController = MVPViewController()
@@ -34,6 +34,16 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 //    let viewModel: GreetingViewModel = GreetingViewModel(person: model)
 //    let view: MVVMViewController = MVVMViewController()
 //    view.viewModel = viewModel
+    
+    // MARK: - VIPER Architecture
+    let view: MessageViewProtocol = MessageView()
+    let presenter: MessagePresenterProtocol = MessagePresenter()
+    let interactor: MessageInteractorProtocol = MessageInteractor()
+    view.presenter = presenter
+    presenter.view = view
+    presenter.interactor = interactor
+    interactor.presenter = presenter
+    interactor.person = model
     
     window?.rootViewController = view
     window?.makeKeyAndVisible()
