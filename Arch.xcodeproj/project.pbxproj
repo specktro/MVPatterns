@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5017EC81271B2AA000FD07C0 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017EC80271B2AA000FD07C0 /* SharedViewController.swift */; };
-		5017EC98271C85DB00FD07C0 /* ShowMessageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017EC97271C85DB00FD07C0 /* ShowMessageProtocols.swift */; };
-		5017EC9A271C98BD00FD07C0 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017EC99271C98BD00FD07C0 /* MessageView.swift */; };
-		5017EC9C271C9A5700FD07C0 /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017EC9B271C9A5700FD07C0 /* MessagePresenter.swift */; };
-		5017EC9E271C9D1500FD07C0 /* MessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017EC9D271C9D1500FD07C0 /* MessageInteractor.swift */; };
+		5017ECA0271E20B700FD07C0 /* MessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017EC9F271E20B700FD07C0 /* MessageInteractor.swift */; };
+		5017ECA2271E20BF00FD07C0 /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017ECA1271E20BF00FD07C0 /* MessagePresenter.swift */; };
+		5017ECA4271E20C900FD07C0 /* ShowMessageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017ECA3271E20C900FD07C0 /* ShowMessageProtocols.swift */; };
+		5017ECA6271E20CF00FD07C0 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017ECA5271E20CF00FD07C0 /* MessageView.swift */; };
 		50B428C21C385D9400939043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C11C385D9400939043 /* AppDelegate.swift */; };
 		50B428C41C385D9400939043 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C31C385D9400939043 /* MVCViewController.swift */; };
 		50B428C91C385D9400939043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B428C81C385D9400939043 /* Assets.xcassets */; };
@@ -36,10 +36,10 @@
 
 /* Begin PBXFileReference section */
 		5017EC80271B2AA000FD07C0 /* SharedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
-		5017EC97271C85DB00FD07C0 /* ShowMessageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMessageProtocols.swift; sourceTree = "<group>"; };
-		5017EC99271C98BD00FD07C0 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		5017EC9B271C9A5700FD07C0 /* MessagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePresenter.swift; sourceTree = "<group>"; };
-		5017EC9D271C9D1500FD07C0 /* MessageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInteractor.swift; sourceTree = "<group>"; };
+		5017EC9F271E20B700FD07C0 /* MessageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageInteractor.swift; path = VIPER/interactor/MessageInteractor.swift; sourceTree = "<group>"; };
+		5017ECA1271E20BF00FD07C0 /* MessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePresenter.swift; path = VIPER/presenter/MessagePresenter.swift; sourceTree = "<group>"; };
+		5017ECA3271E20C900FD07C0 /* ShowMessageProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowMessageProtocols.swift; path = VIPER/protocols/ShowMessageProtocols.swift; sourceTree = "<group>"; };
+		5017ECA5271E20CF00FD07C0 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = VIPER/view/MessageView.swift; sourceTree = "<group>"; };
 		50B428BE1C385D9400939043 /* Arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B428C11C385D9400939043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B428C31C385D9400939043 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		5017EC90271C858300FD07C0 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
-				5017EC97271C85DB00FD07C0 /* ShowMessageProtocols.swift */,
+				5017ECA3271E20C900FD07C0 /* ShowMessageProtocols.swift */,
 			);
 			name = protocols;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 		5017EC91271C858A00FD07C0 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				5017EC99271C98BD00FD07C0 /* MessageView.swift */,
+				5017ECA5271E20CF00FD07C0 /* MessageView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 		5017EC92271C858E00FD07C0 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
-				5017EC9B271C9A5700FD07C0 /* MessagePresenter.swift */,
+				5017ECA1271E20BF00FD07C0 /* MessagePresenter.swift */,
 			);
 			name = presenter;
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 		5017EC95271C85A200FD07C0 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
-				5017EC9D271C9D1500FD07C0 /* MessageInteractor.swift */,
+				5017EC9F271E20B700FD07C0 /* MessageInteractor.swift */,
 			);
 			name = interactor;
 			sourceTree = "<group>";
@@ -296,17 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5017ECA6271E20CF00FD07C0 /* MessageView.swift in Sources */,
 				50B428F21C38660800939043 /* MVPViewController.swift in Sources */,
-				5017EC98271C85DB00FD07C0 /* ShowMessageProtocols.swift in Sources */,
+				5017ECA0271E20B700FD07C0 /* MessageInteractor.swift in Sources */,
+				5017ECA4271E20C900FD07C0 /* ShowMessageProtocols.swift in Sources */,
+				5017ECA2271E20BF00FD07C0 /* MessagePresenter.swift in Sources */,
 				50C690D81C39001100806296 /* GreetingViewModel.swift in Sources */,
 				50C690DA1C3901B700806296 /* MVVMViewController.swift in Sources */,
-				5017EC9A271C98BD00FD07C0 /* MessageView.swift in Sources */,
 				5017EC81271B2AA000FD07C0 /* SharedViewController.swift in Sources */,
 				50C690D21C38F36900806296 /* GreetingPresenter.swift in Sources */,
 				50B428F01C3860AE00939043 /* Person.swift in Sources */,
 				50B428C41C385D9400939043 /* MVCViewController.swift in Sources */,
-				5017EC9C271C9A5700FD07C0 /* MessagePresenter.swift in Sources */,
-				5017EC9E271C9D1500FD07C0 /* MessageInteractor.swift in Sources */,
 				50B428C21C385D9400939043 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
