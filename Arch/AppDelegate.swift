@@ -19,7 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
     
-    let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
+//    let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
     
     // MARK: - MVC Architecture
 //    let view: MVCViewController = MVCViewController()
@@ -35,17 +35,14 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 //    let view: MVVMViewController = MVVMViewController()
 //    view.viewModel = viewModel
     
-    // MARK: - VIPER Architecture
-    let view: MessageViewProtocol = MessageView()
-    let presenter: MessagePresenterProtocol = MessagePresenter()
-    let interactor: MessageInteractorProtocol = MessageInteractor()
+    let view: MenuViewProtocol = MenuView()
+    let presenter: MenuPresenter = MenuPresenter()
+    let interactor: MenuInteractor = MenuInteractor()
     view.presenter = presenter
     presenter.view = view
     presenter.interactor = interactor
-    interactor.presenter = presenter
-    interactor.person = model
-    
-    window?.rootViewController = view
+    interactor.presenter = presenter    
+    window?.rootViewController = UINavigationController(rootViewController: view)
     window?.makeKeyAndVisible()
     
     return true

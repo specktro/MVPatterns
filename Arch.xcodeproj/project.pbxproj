@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5017EC81271B2AA000FD07C0 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017EC80271B2AA000FD07C0 /* SharedViewController.swift */; };
-		5017ECA0271E20B700FD07C0 /* MessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017EC9F271E20B700FD07C0 /* MessageInteractor.swift */; };
-		5017ECA2271E20BF00FD07C0 /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017ECA1271E20BF00FD07C0 /* MessagePresenter.swift */; };
-		5017ECA4271E20C900FD07C0 /* ShowMessageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017ECA3271E20C900FD07C0 /* ShowMessageProtocols.swift */; };
-		5017ECA6271E20CF00FD07C0 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017ECA5271E20CF00FD07C0 /* MessageView.swift */; };
+		5026546627259FBE006BD3D8 /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026545B27259FBE006BD3D8 /* MessagePresenter.swift */; };
+		5026546727259FBE006BD3D8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026545D27259FBE006BD3D8 /* MessageView.swift */; };
+		5026546827259FBE006BD3D8 /* ShowMessageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026545F27259FBE006BD3D8 /* ShowMessageProtocols.swift */; };
+		5026546927259FBE006BD3D8 /* MessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026546127259FBE006BD3D8 /* MessageInteractor.swift */; };
+		5026546F2725A096006BD3D8 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026546E2725A096006BD3D8 /* MenuInteractor.swift */; };
+		502654712725A09B006BD3D8 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654702725A09B006BD3D8 /* MenuPresenter.swift */; };
+		502654732725A0A1006BD3D8 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654722725A0A1006BD3D8 /* MenuProtocols.swift */; };
+		502654752725A0A6006BD3D8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654742725A0A6006BD3D8 /* MenuView.swift */; };
 		50B428C21C385D9400939043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C11C385D9400939043 /* AppDelegate.swift */; };
 		50B428C41C385D9400939043 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C31C385D9400939043 /* MVCViewController.swift */; };
 		50B428C91C385D9400939043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B428C81C385D9400939043 /* Assets.xcassets */; };
@@ -36,10 +40,14 @@
 
 /* Begin PBXFileReference section */
 		5017EC80271B2AA000FD07C0 /* SharedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
-		5017EC9F271E20B700FD07C0 /* MessageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageInteractor.swift; path = VIPER/interactor/MessageInteractor.swift; sourceTree = "<group>"; };
-		5017ECA1271E20BF00FD07C0 /* MessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePresenter.swift; path = VIPER/presenter/MessagePresenter.swift; sourceTree = "<group>"; };
-		5017ECA3271E20C900FD07C0 /* ShowMessageProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowMessageProtocols.swift; path = VIPER/protocols/ShowMessageProtocols.swift; sourceTree = "<group>"; };
-		5017ECA5271E20CF00FD07C0 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = VIPER/view/MessageView.swift; sourceTree = "<group>"; };
+		5026545B27259FBE006BD3D8 /* MessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePresenter.swift; sourceTree = "<group>"; };
+		5026545D27259FBE006BD3D8 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		5026545F27259FBE006BD3D8 /* ShowMessageProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMessageProtocols.swift; sourceTree = "<group>"; };
+		5026546127259FBE006BD3D8 /* MessageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInteractor.swift; sourceTree = "<group>"; };
+		5026546E2725A096006BD3D8 /* MenuInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		502654702725A09B006BD3D8 /* MenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		502654722725A0A1006BD3D8 /* MenuProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
+		502654742725A0A6006BD3D8 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		50B428BE1C385D9400939043 /* Arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B428C11C385D9400939043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B428C31C385D9400939043 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
@@ -74,47 +82,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5017EC8F271C857200FD07C0 /* VIPER */ = {
+		5026545327259FBE006BD3D8 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				5017EC90271C858300FD07C0 /* protocols */,
-				5017EC91271C858A00FD07C0 /* view */,
-				5017EC92271C858E00FD07C0 /* presenter */,
-				5017EC95271C85A200FD07C0 /* interactor */,
+				5026545427259FBE006BD3D8 /* menu */,
+				5026545927259FBE006BD3D8 /* pattern */,
 			);
-			name = VIPER;
+			path = VIPER;
 			sourceTree = "<group>";
 		};
-		5017EC90271C858300FD07C0 /* protocols */ = {
+		5026545427259FBE006BD3D8 /* menu */ = {
 			isa = PBXGroup;
 			children = (
-				5017ECA3271E20C900FD07C0 /* ShowMessageProtocols.swift */,
+				502654762725A0CF006BD3D8 /* router */,
+				5026546D2725A06B006BD3D8 /* protocols */,
+				5026546C2725A065006BD3D8 /* interactor */,
+				5026546B27259FD3006BD3D8 /* view */,
+				5026546A27259FC9006BD3D8 /* presenter */,
 			);
-			name = protocols;
+			path = menu;
 			sourceTree = "<group>";
 		};
-		5017EC91271C858A00FD07C0 /* view */ = {
+		5026545927259FBE006BD3D8 /* pattern */ = {
 			isa = PBXGroup;
 			children = (
-				5017ECA5271E20CF00FD07C0 /* MessageView.swift */,
+				5026545A27259FBE006BD3D8 /* presenter */,
+				5026545C27259FBE006BD3D8 /* view */,
+				5026545E27259FBE006BD3D8 /* protocols */,
+				5026546027259FBE006BD3D8 /* interactor */,
 			);
-			name = view;
+			path = pattern;
 			sourceTree = "<group>";
 		};
-		5017EC92271C858E00FD07C0 /* presenter */ = {
+		5026545A27259FBE006BD3D8 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
-				5017ECA1271E20BF00FD07C0 /* MessagePresenter.swift */,
+				5026545B27259FBE006BD3D8 /* MessagePresenter.swift */,
 			);
-			name = presenter;
+			path = presenter;
 			sourceTree = "<group>";
 		};
-		5017EC95271C85A200FD07C0 /* interactor */ = {
+		5026545C27259FBE006BD3D8 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				5017EC9F271E20B700FD07C0 /* MessageInteractor.swift */,
+				5026545D27259FBE006BD3D8 /* MessageView.swift */,
 			);
-			name = interactor;
+			path = view;
+			sourceTree = "<group>";
+		};
+		5026545E27259FBE006BD3D8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5026545F27259FBE006BD3D8 /* ShowMessageProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		5026546027259FBE006BD3D8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5026546127259FBE006BD3D8 /* MessageInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		5026546A27259FC9006BD3D8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				502654702725A09B006BD3D8 /* MenuPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		5026546B27259FD3006BD3D8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				502654742725A0A6006BD3D8 /* MenuView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5026546C2725A065006BD3D8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5026546E2725A096006BD3D8 /* MenuInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		5026546D2725A06B006BD3D8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				502654722725A0A1006BD3D8 /* MenuProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		502654762725A0CF006BD3D8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 		50B428B51C385D9400939043 = {
@@ -144,7 +212,7 @@
 				50C690D41C38F53B00806296 /* MVC */,
 				50C690D31C38F52100806296 /* MVP */,
 				50C690D61C38F85700806296 /* MVVM */,
-				5017EC8F271C857200FD07C0 /* VIPER */,
+				5026545327259FBE006BD3D8 /* VIPER */,
 				50B428C81C385D9400939043 /* Assets.xcassets */,
 				50B428CA1C385D9400939043 /* LaunchScreen.storyboard */,
 				50B428CD1C385D9400939043 /* Info.plist */,
@@ -296,18 +364,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5017ECA6271E20CF00FD07C0 /* MessageView.swift in Sources */,
 				50B428F21C38660800939043 /* MVPViewController.swift in Sources */,
-				5017ECA0271E20B700FD07C0 /* MessageInteractor.swift in Sources */,
-				5017ECA4271E20C900FD07C0 /* ShowMessageProtocols.swift in Sources */,
-				5017ECA2271E20BF00FD07C0 /* MessagePresenter.swift in Sources */,
+				5026546927259FBE006BD3D8 /* MessageInteractor.swift in Sources */,
+				5026546F2725A096006BD3D8 /* MenuInteractor.swift in Sources */,
+				5026546627259FBE006BD3D8 /* MessagePresenter.swift in Sources */,
 				50C690D81C39001100806296 /* GreetingViewModel.swift in Sources */,
+				5026546827259FBE006BD3D8 /* ShowMessageProtocols.swift in Sources */,
+				502654732725A0A1006BD3D8 /* MenuProtocols.swift in Sources */,
 				50C690DA1C3901B700806296 /* MVVMViewController.swift in Sources */,
 				5017EC81271B2AA000FD07C0 /* SharedViewController.swift in Sources */,
+				502654752725A0A6006BD3D8 /* MenuView.swift in Sources */,
 				50C690D21C38F36900806296 /* GreetingPresenter.swift in Sources */,
 				50B428F01C3860AE00939043 /* Person.swift in Sources */,
 				50B428C41C385D9400939043 /* MVCViewController.swift in Sources */,
 				50B428C21C385D9400939043 /* AppDelegate.swift in Sources */,
+				5026546727259FBE006BD3D8 /* MessageView.swift in Sources */,
+				502654712725A09B006BD3D8 /* MenuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
