@@ -13,6 +13,12 @@ final class MVPViewController: SharedViewController, GreetingView {
   // MARK: - Properties
   var presenter: GreetingPresenter?
   
+  // MARK: - Lifecycle methods
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    title = "MVP"
+  }
+  
   // MARK: - Private methods
   override func didTapButton(_ button: UIButton) {
     presenter?.showGreeting()

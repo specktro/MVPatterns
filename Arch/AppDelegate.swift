@@ -19,12 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.tintColor = .white
-    
-    // MARK: - MVP Architecture
-//    let view: MVPViewController = MVPViewController()
-//    let presenter: GreetingPresenter = GreetingPresenter(view: view, person: model)
-//    view.presenter = presenter
-    
+        
     // MARK: - MVVM Architecture
 //    let viewModel: GreetingViewModel = GreetingViewModel(person: model)
 //    let view: MVVMViewController = MVVMViewController()

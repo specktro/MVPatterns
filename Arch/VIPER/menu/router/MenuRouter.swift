@@ -20,7 +20,12 @@ final class MenuRouter: MenuRouterProtocol {
   }
   
   func showMVP(from view: MenuViewProtocol? = nil) {
-    debugPrint(#function)
+    let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
+    let newView: MVPViewController = MVPViewController()
+    let presenter: GreetingPresenter = GreetingPresenter(view: newView, person: model)
+    newView.presenter = presenter
+    
+    view?.navigationController?.pushViewController(newView, animated: true)
   }
   
   func showMVVM(from view: MenuViewProtocol? = nil) {
