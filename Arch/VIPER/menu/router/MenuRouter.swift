@@ -6,7 +6,6 @@
 //  Copyright © 2021 specktro. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 // MARK: MenuRouter class
