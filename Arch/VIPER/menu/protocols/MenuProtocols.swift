@@ -16,15 +16,34 @@ protocol MenuViewProtocol: UIViewController {
 protocol MenuPresenterProtocol {
   var view: MenuViewProtocol? { get set }
   var interactor: MenuInteractorProtocol? { get set }
+  
+  // Input
   func getMenuOptions()
+  func selected(_ option: String)
+  
+  // Output
   func options(_ options: [String])
+  func goToMVC()
+  func goToMVP()
+  func goToMVVM()
+  func goToVIPER()
+  func goToError()
 }
 
 protocol MenuInteractorProtocol: AnyObject {
   var presenter: MenuPresenter? { get set }
+  
+  // Input
   func getMenu()
+  func validate(_ selectedOption: String)
 }
 
-protocol MenuRouterProtocol { }
+protocol MenuRouterProtocol {
+  func showMVC(from view: MenuViewProtocol?)
+  func showMVP(from view: MenuViewProtocol?)
+  func showMVVM(from view: MenuViewProtocol?)
+  func showVIPER(from view: MenuViewProtocol?)
+  func showError(from view: MenuViewProtocol?)
+}
 
 protocol MenuDataManagerProtocol { }

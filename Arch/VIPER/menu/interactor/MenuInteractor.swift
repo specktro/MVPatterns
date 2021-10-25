@@ -18,4 +18,19 @@ final class MenuInteractor: MenuInteractorProtocol {
     let options: [String] = ["MVC", "MVP", "MVVM", "VIPER"]
     presenter?.options(options)
   }
+  
+  func validate(_ selectedOption: String) {
+    switch selectedOption {
+    case "MVC":
+      presenter?.goToMVC()
+    case "MVP":
+      presenter?.goToMVP()
+    case "MVVM":
+      presenter?.goToMVVM()
+    case "VIPER":
+      presenter?.goToVIPER()
+    default:
+      presenter?.goToError()
+    }
+  }
 }

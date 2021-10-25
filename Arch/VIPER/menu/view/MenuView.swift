@@ -32,6 +32,7 @@ final class MenuView: UIViewController {
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     tableView.translatesAutoresizingMaskIntoConstraints = false
     tableView.dataSource = self
+    tableView.delegate = self
     view.addSubview(tableView)
     self.tableView = tableView
     
@@ -51,14 +52,24 @@ extension MenuView: MenuViewProtocol {
 }
 
 // MARK: - UITableViewDataSource methods
-extension MenuView: UITableViewDataSource {
+extension MenuView: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return options?.count ?? 0
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    cell.accessoryType = .disclosureIndicator
     cell.textLabel?.text = options?[indexPath.row]
     return cell
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let option: String = options?[indexPath.row] else {
+      return
+    }
+    
+    tableView.deselectRow(at: indexPath, animated: true)
+    presenter?.selected(option)
   }
 }

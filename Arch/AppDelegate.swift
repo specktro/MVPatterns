@@ -18,12 +18,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   // MARK: - UIApplicationDelegate methods
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
-    
-//    let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
-    
-    // MARK: - MVC Architecture
-//    let view: MVCViewController = MVCViewController()
-//    view.person = model
+    window?.tintColor = .white
     
     // MARK: - MVP Architecture
 //    let view: MVPViewController = MVPViewController()
@@ -41,7 +36,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     view.presenter = presenter
     presenter.view = view
     presenter.interactor = interactor
-    interactor.presenter = presenter    
+    interactor.presenter = presenter
     window?.rootViewController = UINavigationController(rootViewController: view)
     window?.makeKeyAndVisible()
     
