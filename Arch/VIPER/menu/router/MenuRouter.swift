@@ -29,7 +29,12 @@ final class MenuRouter: MenuRouterProtocol {
   }
   
   func showMVVM(from view: MenuViewProtocol? = nil) {
-    debugPrint(#function)
+    let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
+    let viewModel: GreetingViewModel = GreetingViewModel(person: model)
+    let newView: MVVMViewController = MVVMViewController()
+    newView.viewModel = viewModel
+    
+    view?.navigationController?.pushViewController(newView, animated: true)
   }
   
   func showVIPER(from view: MenuViewProtocol? = nil) {

@@ -20,11 +20,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.tintColor = .white
         
-    // MARK: - MVVM Architecture
-//    let viewModel: GreetingViewModel = GreetingViewModel(person: model)
-//    let view: MVVMViewController = MVVMViewController()
-//    view.viewModel = viewModel
-    
     let view: MenuViewProtocol = MenuView()
     let presenter: MenuPresenter = MenuPresenter()
     let interactor: MenuInteractor = MenuInteractor()
