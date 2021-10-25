@@ -17,6 +17,7 @@
 		502654732725A0A1006BD3D8 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654722725A0A1006BD3D8 /* MenuProtocols.swift */; };
 		502654752725A0A6006BD3D8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654742725A0A6006BD3D8 /* MenuView.swift */; };
 		502654782726EB19006BD3D8 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654772726EB19006BD3D8 /* MenuRouter.swift */; };
+		50527976272708A600D96533 /* MessageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50527975272708A600D96533 /* MessageRouter.swift */; };
 		50B428C21C385D9400939043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C11C385D9400939043 /* AppDelegate.swift */; };
 		50B428C41C385D9400939043 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C31C385D9400939043 /* MVCViewController.swift */; };
 		50B428C91C385D9400939043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B428C81C385D9400939043 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		502654722725A0A1006BD3D8 /* MenuProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
 		502654742725A0A6006BD3D8 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		502654772726EB19006BD3D8 /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		50527975272708A600D96533 /* MessageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRouter.swift; sourceTree = "<group>"; };
 		50B428BE1C385D9400939043 /* Arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B428C11C385D9400939043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B428C31C385D9400939043 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		5026545927259FBE006BD3D8 /* pattern */ = {
 			isa = PBXGroup;
 			children = (
+				505279742727085A00D96533 /* router */,
 				5026545A27259FBE006BD3D8 /* presenter */,
 				5026545C27259FBE006BD3D8 /* view */,
 				5026545E27259FBE006BD3D8 /* protocols */,
@@ -184,6 +187,14 @@
 			isa = PBXGroup;
 			children = (
 				502654772726EB19006BD3D8 /* MenuRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		505279742727085A00D96533 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				50527975272708A600D96533 /* MessageRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -373,6 +384,7 @@
 				502654782726EB19006BD3D8 /* MenuRouter.swift in Sources */,
 				5026546627259FBE006BD3D8 /* MessagePresenter.swift in Sources */,
 				50C690D81C39001100806296 /* GreetingViewModel.swift in Sources */,
+				50527976272708A600D96533 /* MessageRouter.swift in Sources */,
 				5026546827259FBE006BD3D8 /* ShowMessageProtocols.swift in Sources */,
 				502654732725A0A1006BD3D8 /* MenuProtocols.swift in Sources */,
 				50C690DA1C3901B700806296 /* MVVMViewController.swift in Sources */,

@@ -38,7 +38,10 @@ final class MenuRouter: MenuRouterProtocol {
   }
   
   func showVIPER(from view: MenuViewProtocol? = nil) {
-    debugPrint(#function)
+    let messageRouter: MessageRouterProtocol = MessageRouter()
+    let newView: MessageViewProtocol = messageRouter.createModule()
+    
+    view?.navigationController?.pushViewController(newView, animated: true)
   }
   
   func showError(from view: MenuViewProtocol? = nil) {
