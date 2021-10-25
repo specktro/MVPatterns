@@ -8,12 +8,14 @@
 
 import UIKit
 
+// MARK: MenuViewProtocol protocol
 protocol MenuViewProtocol: UIViewController {
   var presenter: MenuPresenterProtocol? { get set }
   func showMenu(_ options: [String])
 }
 
-protocol MenuPresenterProtocol {
+// MARK: MenuPresenterProtocol protocol
+protocol MenuPresenterProtocol: AnyObject {
   var view: MenuViewProtocol? { get set }
   var interactor: MenuInteractorProtocol? { get set }
   
@@ -30,20 +32,21 @@ protocol MenuPresenterProtocol {
   func goToError()
 }
 
+// MARK: MenuInteractorProtocol protocol
 protocol MenuInteractorProtocol: AnyObject {
-  var presenter: MenuPresenter? { get set }
+  var presenter: MenuPresenterProtocol? { get set }
   
   // Input
   func getMenu()
   func validate(_ selectedOption: String)
 }
 
+// MARK: MenuRouterProtocol protocol
 protocol MenuRouterProtocol {
+  func createModule() -> MenuViewProtocol
   func showMVC(from view: MenuViewProtocol?)
   func showMVP(from view: MenuViewProtocol?)
   func showMVVM(from view: MenuViewProtocol?)
   func showVIPER(from view: MenuViewProtocol?)
   func showError(from view: MenuViewProtocol?)
 }
-
-protocol MenuDataManagerProtocol { }

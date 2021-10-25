@@ -7,10 +7,23 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: MenuRouter class
 final class MenuRouter: MenuRouterProtocol {
   // MARK: - Methods
+  func createModule() -> MenuViewProtocol {
+    let view: MenuViewProtocol = MenuView()
+    let presenter: MenuPresenterProtocol = MenuPresenter()
+    let interactor: MenuInteractorProtocol = MenuInteractor()
+    view.presenter = presenter
+    presenter.view = view
+    presenter.interactor = interactor
+    interactor.presenter = presenter
+    
+    return view
+  }
+  
   func showMVC(from view: MenuViewProtocol? = nil) {
     let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
     let newView: MVCViewController = MVCViewController()
@@ -45,6 +58,7 @@ final class MenuRouter: MenuRouterProtocol {
   }
   
   func showError(from view: MenuViewProtocol? = nil) {
-    debugPrint(#function)
+    let alert: UIAlertController = UIAlertController(title: "Error", message: "La opcón seleccionada no existe", preferredStyle: .alert)
+    view?.present(alert, animated: true, completion: nil)
   }
 }

@@ -11,7 +11,7 @@ import Foundation
 // MARK: MenuInteractor class
 final class MenuInteractor: MenuInteractorProtocol {
   // MARK: - Properties
-  weak var presenter: MenuPresenter?
+  weak var presenter: MenuPresenterProtocol?
   
   // MARK: - Methods
   func getMenu() {

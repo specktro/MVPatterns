@@ -19,14 +19,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.tintColor = .white
-        
-    let view: MenuViewProtocol = MenuView()
-    let presenter: MenuPresenter = MenuPresenter()
-    let interactor: MenuInteractor = MenuInteractor()
-    view.presenter = presenter
-    presenter.view = view
-    presenter.interactor = interactor
-    interactor.presenter = presenter
+    
+    let menuRouter: MenuRouterProtocol = MenuRouter()
+    let view: MenuViewProtocol = menuRouter.createModule()
+    
     window?.rootViewController = UINavigationController(rootViewController: view)
     window?.makeKeyAndVisible()
     

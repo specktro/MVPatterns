@@ -13,6 +13,12 @@ final class MessageView: SharedViewController, MessageViewProtocol {
   // MARK: - Properties
   var presenter: MessagePresenterProtocol?
   
+  // MARK: - Lifecycle methods
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    title = "VIPER"
+  }
+  
   // MARK: - SharedViewController method
   override func didTapButton(_ button: UIButton) {
     presenter?.askMessage()
