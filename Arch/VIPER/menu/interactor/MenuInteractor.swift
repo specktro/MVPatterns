@@ -12,10 +12,14 @@ import Foundation
 final class MenuInteractor: MenuInteractorProtocol {
   // MARK: - Properties
   weak var presenter: MenuPresenterProtocol?
+  var options: [String]
   
   // MARK: - Methods
+  init(options: [String]) {
+    self.options = options
+  }
+  
   func getMenu() {
-    let options: [String] = ["MVC", "MVP", "MVVM", "VIPER"]
     presenter?.options(options)
   }
   

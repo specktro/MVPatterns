@@ -35,8 +35,10 @@ protocol MenuPresenterProtocol: AnyObject {
 // MARK: MenuInteractorProtocol protocol
 protocol MenuInteractorProtocol: AnyObject {
   var presenter: MenuPresenterProtocol? { get set }
+  var options: [String] { get set }
   
   // Input
+  init (options: [String])
   func getMenu()
   func validate(_ selectedOption: String)
 }

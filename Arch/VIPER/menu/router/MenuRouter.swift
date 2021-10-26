@@ -14,7 +14,7 @@ final class MenuRouter: MenuRouterProtocol {
   func createModule() -> MenuViewProtocol {
     let view: MenuViewProtocol = MenuView()
     let presenter: MenuPresenterProtocol = MenuPresenter()
-    let interactor: MenuInteractorProtocol = MenuInteractor()
+    let interactor: MenuInteractorProtocol = MenuInteractor(options: ["MVC", "MVP", "MVVM", "VIPER"])
     view.presenter = presenter
     presenter.view = view
     presenter.interactor = interactor
