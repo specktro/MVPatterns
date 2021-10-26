@@ -33,6 +33,8 @@ final class MenuInteractor: MenuInteractorProtocol {
       presenter?.goToMVVM()
     case "VIPER":
       presenter?.goToVIPER()
+    case "MVVM + SwiftUI":
+      presenter?.goToSwiftUI()
     default:
       presenter?.goToError()
     }

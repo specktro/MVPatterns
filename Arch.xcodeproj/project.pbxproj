@@ -17,6 +17,8 @@
 		502654732725A0A1006BD3D8 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654722725A0A1006BD3D8 /* MenuProtocols.swift */; };
 		502654752725A0A6006BD3D8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654742725A0A6006BD3D8 /* MenuView.swift */; };
 		502654782726EB19006BD3D8 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502654772726EB19006BD3D8 /* MenuRouter.swift */; };
+		502C519E2727A97F007B4818 /* SimpleMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502C519C2727A97F007B4818 /* SimpleMessageView.swift */; };
+		502C519F2727A97F007B4818 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502C519D2727A97F007B4818 /* MessageViewModel.swift */; };
 		50527976272708A600D96533 /* MessageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50527975272708A600D96533 /* MessageRouter.swift */; };
 		50B428C21C385D9400939043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C11C385D9400939043 /* AppDelegate.swift */; };
 		50B428C41C385D9400939043 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B428C31C385D9400939043 /* MVCViewController.swift */; };
@@ -51,6 +53,8 @@
 		502654722725A0A1006BD3D8 /* MenuProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
 		502654742725A0A6006BD3D8 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		502654772726EB19006BD3D8 /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		502C519C2727A97F007B4818 /* SimpleMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMessageView.swift; sourceTree = "<group>"; };
+		502C519D2727A97F007B4818 /* MessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		50527975272708A600D96533 /* MessageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRouter.swift; sourceTree = "<group>"; };
 		50B428BE1C385D9400939043 /* Arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B428C11C385D9400939043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +195,15 @@
 			path = router;
 			sourceTree = "<group>";
 		};
+		502C519B2727A97F007B4818 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				502C519C2727A97F007B4818 /* SimpleMessageView.swift */,
+				502C519D2727A97F007B4818 /* MessageViewModel.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		505279742727085A00D96533 /* router */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +239,7 @@
 				50C690D41C38F53B00806296 /* MVC */,
 				50C690D31C38F52100806296 /* MVP */,
 				50C690D61C38F85700806296 /* MVVM */,
+				502C519B2727A97F007B4818 /* SwiftUI */,
 				5026545327259FBE006BD3D8 /* VIPER */,
 				50B428C81C385D9400939043 /* Assets.xcassets */,
 				50B428CA1C385D9400939043 /* LaunchScreen.storyboard */,
@@ -380,6 +394,7 @@
 			files = (
 				50B428F21C38660800939043 /* MVPViewController.swift in Sources */,
 				5026546927259FBE006BD3D8 /* MessageInteractor.swift in Sources */,
+				502C519F2727A97F007B4818 /* MessageViewModel.swift in Sources */,
 				5026546F2725A096006BD3D8 /* MenuInteractor.swift in Sources */,
 				502654782726EB19006BD3D8 /* MenuRouter.swift in Sources */,
 				5026546627259FBE006BD3D8 /* MessagePresenter.swift in Sources */,
@@ -392,6 +407,7 @@
 				502654752725A0A6006BD3D8 /* MenuView.swift in Sources */,
 				50C690D21C38F36900806296 /* GreetingPresenter.swift in Sources */,
 				50B428F01C3860AE00939043 /* Person.swift in Sources */,
+				502C519E2727A97F007B4818 /* SimpleMessageView.swift in Sources */,
 				50B428C41C385D9400939043 /* MVCViewController.swift in Sources */,
 				50B428C21C385D9400939043 /* AppDelegate.swift in Sources */,
 				5026546727259FBE006BD3D8 /* MessageView.swift in Sources */,

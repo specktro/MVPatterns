@@ -44,6 +44,10 @@ final class MenuPresenter: MenuPresenterProtocol {
     router.showVIPER(from: view)
   }
   
+  func goToSwiftUI() {
+    router.showSwiftUI(from: view)
+  }
+  
   func goToError() {
     router.showError(from: view)
   }
