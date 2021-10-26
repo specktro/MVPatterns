@@ -2,7 +2,7 @@
 //  MenuRouter.swift
 //  Arch
 //
-//  Created by Miguel Angel Gómez Rivero on 25/10/21.
+//  Created by specktro on 25/10/21.
 //  Copyright © 2021 specktro. All rights reserved.
 //
 

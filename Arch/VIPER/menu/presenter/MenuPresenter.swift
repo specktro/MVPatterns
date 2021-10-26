@@ -2,12 +2,11 @@
 //  MenuPresenter.swift
 //  Arch
 //
-//  Created by Miguel Angel Gómez Rivero on 16/10/21.
+//  Created by specktro on 16/10/21.
 //  Copyright © 2021 specktro. All rights reserved.
 //
 
 import Foundation
-import CoreText
 
 // MARK: MenuPresenter
 final class MenuPresenter: MenuPresenterProtocol {
