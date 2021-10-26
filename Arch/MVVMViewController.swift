@@ -19,6 +19,12 @@ final class MVVMViewController: SharedViewController {
     }
   }
   
+  // MARK: - Lifecycle methods
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    title = "MVVM"
+  }
+  
   // MARK: - Private methods
   override func didTapButton(_ button: UIButton) {
     viewModel?.showGreeting()

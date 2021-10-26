@@ -36,3 +36,8 @@ protocol MessageInteractorProtocol: AnyObject {
   // Input
   func prepareMessage()
 }
+
+// MARK: MessageRouterProtocol protocol
+protocol MessageRouterProtocol {
+  func createModule() -> MessageViewProtocol
+}

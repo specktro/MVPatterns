@@ -13,6 +13,12 @@ final class MVCViewController: SharedViewController {
   // MARK: - Properties
   var person: Person?
   
+  // MARK: - Lifecycle methods
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    title = "MVC"
+  }
+  
   // MARK: - Private methods
   override func didTapButton(_ button: UIButton) {
     guard let person = person else {

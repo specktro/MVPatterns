@@ -17,6 +17,7 @@ class SharedViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    navigationItem.largeTitleDisplayMode = .never
     view.backgroundColor = UIColor.gray
     
     let button: UIButton = UIButton(type: .system)
