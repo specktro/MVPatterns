@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 // MARK: MenuRouter class
 final class MenuRouter: MenuRouterProtocol {
@@ -14,7 +15,7 @@ final class MenuRouter: MenuRouterProtocol {
   func createModule() -> MenuViewProtocol {
     let view: MenuViewProtocol = MenuView()
     let presenter: MenuPresenterProtocol = MenuPresenter()
-    let interactor: MenuInteractorProtocol = MenuInteractor(options: ["MVC", "MVP", "MVVM", "VIPER"])
+    let interactor: MenuInteractorProtocol = MenuInteractor(options: ["MVC", "MVP", "MVVM", "VIPER", "MVVM + SwiftUI"])
     view.presenter = presenter
     presenter.view = view
     presenter.interactor = interactor
@@ -52,6 +53,17 @@ final class MenuRouter: MenuRouterProtocol {
   func showVIPER(from view: MenuViewProtocol? = nil) {
     let messageRouter: MessageRouterProtocol = MessageRouter()
     let newView: MessageViewProtocol = messageRouter.createModule()
+    
+    view?.navigationController?.pushViewController(newView, animated: true)
+  }
+  
+  func showSwiftUI(from view: MenuViewProtocol?) {
+    let model: Person = Person(firstName: "Sprieto", lastName: "Moreno")
+    let messageViewModel: MessageViewModel = MessageViewModel(person: model)
+    let messageView: SimpleMessageView = SimpleMessageView(viewModel: messageViewModel)
+    let newView: UIHostingController = UIHostingController(rootView: messageView)
+    newView.title = "MVVM + SwiftUI"
+    newView.navigationItem.largeTitleDisplayMode = .never
     
     view?.navigationController?.pushViewController(newView, animated: true)
   }

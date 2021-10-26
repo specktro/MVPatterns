@@ -29,6 +29,7 @@ protocol MenuPresenterProtocol: AnyObject {
   func goToMVP()
   func goToMVVM()
   func goToVIPER()
+  func goToSwiftUI()
   func goToError()
 }
 
@@ -50,5 +51,6 @@ protocol MenuRouterProtocol {
   func showMVP(from view: MenuViewProtocol?)
   func showMVVM(from view: MenuViewProtocol?)
   func showVIPER(from view: MenuViewProtocol?)
+  func showSwiftUI(from view: MenuViewProtocol?)
   func showError(from view: MenuViewProtocol?)
 }
