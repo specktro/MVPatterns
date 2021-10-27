@@ -23,11 +23,25 @@ class SharedViewController: UIViewController {
     let button: UIButton = UIButton(type: .system)
     button.translatesAutoresizingMaskIntoConstraints = false
     button.setTitle("TAP", for: .normal)
+    button.setImage(UIImage(systemName: "hand.tap.fill"), for: .normal)
+    
+    if let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .title3)
+        .withSymbolicTraits([.traitBold])?.withDesign(.rounded) {
+      button.titleLabel?.font = UIFont(descriptor: descriptor, size: 0)
+    }
+    
     button.setTitleColor(.white, for: .normal)
     button.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
     view.addSubview(button)
     
     let label: UILabel = UILabel(frame: .zero)
+    
+    if let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
+        .withDesign(.rounded) {
+      label.font = UIFont(descriptor: descriptor, size: 0)
+    }
+    
+    label.font = UIFont.preferredFont(forTextStyle: .body)
     label.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(label)
     self.greetingLabel = label

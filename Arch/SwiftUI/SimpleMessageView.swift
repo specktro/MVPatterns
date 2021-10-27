@@ -23,9 +23,15 @@ struct SimpleMessageView: View {
         Button {
           viewModel.showGreeting()
         } label: {
-          Label("TAP", systemImage: "hand.tap.fill")
-            .font(.system(size: 40, weight: .bold, design: .rounded))
-            .foregroundColor(.white)
+          Label {
+            Text("TAP")
+              .font(.system(.title3, design: .rounded))
+              .bold()
+          } icon: {
+            Image(systemName: "hand.tap.fill")
+              .font(.system(size: 20))
+          }
+          .foregroundColor(.white)
         }
         Text(viewModel.greeting)
           .font(.system(.body, design: .rounded))
