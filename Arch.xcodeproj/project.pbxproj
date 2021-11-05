@@ -45,6 +45,7 @@
 		502C519C2727A97F007B4818 /* SimpleMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMessageView.swift; sourceTree = "<group>"; };
 		502C519D2727A97F007B4818 /* MessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		502D2A7A2734B67300488497 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		502D2A7D2734BBE500488497 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		50527975272708A600D96533 /* MessageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRouter.swift; sourceTree = "<group>"; };
 		50B428BE1C385D9400939043 /* Arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B428C11C385D9400939043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +222,7 @@
 				50B428C81C385D9400939043 /* Assets.xcassets */,
 				502D2A7A2734B67300488497 /* LaunchScreen.storyboard */,
 				50B428CD1C385D9400939043 /* Info.plist */,
+				502D2A7D2734BBE500488497 /* README.md */,
 			);
 			path = Arch;
 			sourceTree = "<group>";
