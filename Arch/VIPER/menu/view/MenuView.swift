@@ -59,8 +59,21 @@ extension MenuView: UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    
+    var content = cell.defaultContentConfiguration()
+    content.text = options?[indexPath.row]
+    content.image = UIImage(systemName: "text.book.closed.fill")
+    
+    if let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .title3)
+        .withSymbolicTraits([.traitBold])?.withDesign(.rounded) {
+      content.textProperties.font = UIFont(descriptor: descriptor, size: 0)
+    }
+    
+    content.imageProperties.tintColor = .systemOrange
+    
+    cell.contentConfiguration = content
     cell.accessoryType = .disclosureIndicator
-    cell.textLabel?.text = options?[indexPath.row]
+    
     return cell
   }
   
